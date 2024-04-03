@@ -1,10 +1,9 @@
-const HomeLayout = async ({ children }: any) => {
-  return (
-    <div>
-      홈 레이아웃
-      {children}
-    </div>
-  );
-};
+import { ReactNode } from "react";
 
-export default HomeLayout;
+export default async function HomeLayout({
+  children,
+}: {
+  children: ReactNode;
+}) {
+  return <div>홈 레이아웃{children}</div>;
+}

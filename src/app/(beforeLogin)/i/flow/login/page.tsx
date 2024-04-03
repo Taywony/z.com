@@ -1,5 +1,3 @@
-const Home = () => {
+export default function Home() {
   return <main>로그인 모달</main>;
-};
-
-export default Home;
+}

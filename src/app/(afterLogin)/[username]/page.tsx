@@ -1,5 +1,3 @@
-const page = () => {
-  return <div></div>;
-};
-
-export default page;
+export default function profile() {
+  return <main></main>;
+}
