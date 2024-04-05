@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100dvw;
+}
+
+.leftSectionWrapper {
+  width: 275px;
+  padding: 0 8px;
+  display: flex;
+  flex-direction: column;
+
+  /* background-color: green; */
+}
+
+.leftSectionLogoBox {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.leftSectionLogoBox:hover {
+  background-color: rgba(239, 243, 244, 0.8);
+}
+
+.leftSectionLogo {
+  width: 50%;
+  height: 50%;
+}
+
+.leftMenuBox {
+  width: 100%;
+  height: 58.25px;
+  padding: 4px 0;
+}
+
+.leftMenu {
+  width: max-content;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+.leftMenuBox:hover .leftMenu {
+  background-color: rgba(239, 243, 244, 0.8);
+}
+
+.leftMenuIcon {
+  width: 26.25px;
+  height: 26.25px;
+}
+
+.leftMenuTitle {
+  font-size: 20px;
+  margin: 0 20px;
+  font-weight: bold;
+}
+
+.rightSectionWrapper {
+  display: flex;
+  background-color: lightsalmon;
+}
