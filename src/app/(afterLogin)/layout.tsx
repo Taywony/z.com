@@ -7,6 +7,8 @@ import Link from "next/link";
 import Exlpore from "../../../public/explore.svg";
 import NavMenu from "./_component/NavMenu";
 import LogoutButton from "./_component/LogoutButton";
+import FollowRecommend from "./_component/FollowRecommend";
+import TrendSection from "./_component/Trend";
 
 export default function AfterLoginLayout({
   children,
@@ -41,22 +43,33 @@ export default function AfterLoginLayout({
         <div className={style.rightSectionInner}>
           <main className={style.main}>{children}</main>
           <section className={style.rightSection}>
-            <form className={style.search}>
-              <div className={style.serachBox}>
-                <div className={style.searchIconBox}>
-                  <Image
-                    src={Exlpore}
-                    alt="search"
-                    className={style.searchIcon}
+            <div className={style.searchSection}>
+              <form className={style.search}>
+                <div className={style.serachBox}>
+                  <div className={style.searchIconBox}>
+                    <Image
+                      src={Exlpore}
+                      alt="search"
+                      className={style.searchIcon}
+                    />
+                  </div>
+                  <input
+                    type="serach"
+                    className={style.searchInput}
+                    placeholder="Search"
                   />
                 </div>
-                <input
-                  type="serach"
-                  className={style.searchInput}
-                  placeholder="Search"
-                />
-              </div>
-            </form>
+              </form>
+            </div>
+
+            <TrendSection />
+            <div className={style.followSection}>
+              <h3>Who to follow</h3>
+              <FollowRecommend />
+              <FollowRecommend />
+              <FollowRecommend />
+              <FollowRecommend />
+            </div>
           </section>
         </div>
       </div>
