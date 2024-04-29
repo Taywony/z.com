@@ -1,0 +1,79 @@
+.userTabSection {
+  margin: 12px 0;
+}
+
+.userBtn {
+  width: 100%;
+  height: 65px;
+  background-color: inherit;
+  border: none;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  transition-duration: 0.2s;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+.userBtn:hover {
+  cursor: pointer;
+  background-color: rgba(239, 243, 244, 0.8);
+}
+
+.userTabSection {
+  margin: 12px 0;
+}
+
+.userImgBox {
+  width: 40px;
+  height: 40px;
+}
+
+.userImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.userInfoBox {
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px;
+}
+
+.userNameBox {
+  display: flex;
+  justify-content: start;
+}
+
+.userName {
+  color: black;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.userEmailBox {
+  display: flex;
+  justify-content: start;
+}
+
+.userEmail {
+  color: black;
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.userMoreBox {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.userMoreBox svg {
+  width: 18.75px;
+  height: 18.75px;
+}
