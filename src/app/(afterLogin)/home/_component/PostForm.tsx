@@ -1,3 +1,5 @@
+"use client";
+
 import style from "./postForm.module.css";
 
 export default function PostForm() {
