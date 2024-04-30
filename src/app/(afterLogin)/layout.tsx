@@ -8,7 +8,7 @@ import Exlpore from "../../../public/explore.svg";
 import NavMenu from "./_component/NavMenu";
 import LogoutButton from "./_component/LogoutButton";
 import FollowRecommend from "./_component/FollowRecommend";
-import TrendSection from "./_component/Trend";
+import TrendSection from "./_component/TrendSection";
 
 export default function AfterLoginLayout({
   children,
@@ -61,14 +61,15 @@ export default function AfterLoginLayout({
                 </div>
               </form>
             </div>
-
-            <TrendSection />
-            <div className={style.followSection}>
-              <h3>Who to follow</h3>
-              <FollowRecommend />
-              <FollowRecommend />
-              <FollowRecommend />
-              <FollowRecommend />
+            <div className={style.trendFollow}>
+              <TrendSection />
+              <div className={style.followSection}>
+                <h3>Who to follow</h3>
+                <FollowRecommend />
+                <FollowRecommend />
+                <FollowRecommend />
+                <FollowRecommend />
+              </div>
             </div>
           </section>
         </div>

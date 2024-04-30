@@ -136,21 +136,24 @@
   width: 600px;
   display: flex;
   justify-content: center;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 1px solid rgb(113, 118, 123);
+  border-right: 1px solid rgb(113, 118, 123);
 }
 
 .rightSection {
   width: 350px;
+  position: relative;
 }
 
 .searchSection {
   width: inherit;
-  margin-bottom: 60px;
+  height: 53px;
+  position: fixed;
+  z-index: 10;
+  background-color: #fff;
 }
 
 .search {
-  position: fixed;
   width: inherit;
   height: 44px;
   margin-top: 6px;
@@ -191,6 +194,10 @@
   margin-left: 5px;
   font-size: 15px;
   color: black;
+}
+
+.trendFollow {
+  margin-top: 60px;
 }
 
 .followSection {
