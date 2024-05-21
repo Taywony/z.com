@@ -1,5 +1,5 @@
-const page = () => {
-  return <div></div>;
-};
+import Home from "../../home/page";
 
-export default page;
+export default function Page() {
+  return <Home />;
+}

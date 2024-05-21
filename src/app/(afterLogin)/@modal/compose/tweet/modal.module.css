@@ -1,0 +1,161 @@
+.modalBackground {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+
+.modal {
+  background-color: #fff;
+  min-width: 600px;
+  max-width: 80vw;
+  height: max-content;
+  max-height: 400px;
+  position: relative;
+  top: 5%;
+  border-radius: 16px;
+}
+
+.closeBtn {
+  background-color: transparent;
+  border: none;
+  padding: 0 16px;
+  height: 53px;
+}
+
+.closeBtnBox {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 9999px;
+}
+
+.closeBtnBox:hover {
+  cursor: pointer;
+  background-color: rgba(15, 20, 25, 0.1);
+  transition-duration: 0.2s;
+}
+
+.closeBtn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.modalForm {
+  width: 100%;
+  height: 100%;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.userTextSection {
+  width: 100%;
+  height: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  border-bottom: 1px solid rgb(239, 243, 244);
+}
+
+.userImageBox {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+}
+
+.meImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.postTextBox {
+  flex: 1;
+  height: 100%;
+  padding: 12px 0;
+}
+
+.postText {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #fff;
+  color: black;
+  padding: 12px 0;
+  font-size: 20px;
+  line-height: 24px;
+  outline: none;
+  resize: vertical;
+}
+
+.postText::placeholder {
+  font-family: Malgun Gothic;
+}
+
+.imagePostBtnSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.imageUploadBox {
+  display: flex;
+}
+
+.imageUploadButton {
+  width: 34px;
+  height: 34px;
+  border: none;
+  cursor: pointer;
+  border-radius: 17px;
+  transition-duration: 0.2s;
+  transition-property: background-color;
+  background-color: rgb(29, 155, 240, 0.01);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageUploadButton:hover {
+  background-color: rgb(29, 155, 240, 0.1);
+}
+
+.imageUploadInput {
+  width: 0.1px;
+  height: 0.1px;
+}
+
+.postButton {
+  width: 66px;
+  height: 36px;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 18px;
+  background-color: rgb(29, 155, 240);
+}
+
+.postButton:hover {
+  cursor: pointer;
+}
+
+.postButton:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
