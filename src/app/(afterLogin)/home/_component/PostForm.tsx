@@ -39,7 +39,7 @@ export default function PostForm() {
               value={text}
               onChange={handleInputValue}
               className={style.postText}
-              rows={1}
+              rows={3}
             />
           </div>
           <div className={style.uploadSection}>

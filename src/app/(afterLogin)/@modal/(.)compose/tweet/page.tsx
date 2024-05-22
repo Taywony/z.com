@@ -33,7 +33,7 @@ export default function TweetModal() {
           </div>
         </button>
         <form className={style.modalForm}>
-          <div className={style.userTextSection}>
+          <div className={style.modalBody}>
             <div className={style.userImageBox}>
               <Image src={me.url} alt="myImage" className={style.meImage} />
             </div>
@@ -43,11 +43,11 @@ export default function TweetModal() {
                 value={text}
                 onChange={handleInputValue}
                 className={style.postText}
-                rows={1}
+                rows={3}
               />
             </div>
           </div>
-          <div className={style.imagePostBtnSection}>
+          <div className={style.modalFooter}>
             <div className={style.imageUploadBox}>
               <button
                 className={style.imageUploadButton}
