@@ -4,11 +4,11 @@ import Zlogo from "../../../public/zlogo.png";
 import Image from "next/image";
 import Link from "next/link";
 
-import Exlpore from "../../../public/explore.svg";
 import NavMenu from "./_component/NavMenu";
 import LogoutButton from "./_component/LogoutButton";
 import FollowRecommend from "./_component/FollowRecommend";
 import TrendSection from "./_component/TrendSection";
+import SearchSection from "./_component/SearchSection";
 
 type Props = {
   children: ReactNode;
@@ -44,24 +44,7 @@ export default function AfterLoginLayout({ children, modal }: Props) {
         <div className={style.rightSectionInner}>
           <main className={style.main}>{children}</main>
           <section className={style.rightSection}>
-            <div className={style.searchSection}>
-              <form className={style.search}>
-                <div className={style.serachBox}>
-                  <div className={style.searchIconBox}>
-                    <Image
-                      src={Exlpore}
-                      alt="search"
-                      className={style.searchIcon}
-                    />
-                  </div>
-                  <input
-                    type="serach"
-                    className={style.searchInput}
-                    placeholder="Search"
-                  />
-                </div>
-              </form>
-            </div>
+            <SearchSection />
             <div className={style.trendFollow}>
               <TrendSection />
               <div className={style.followSection}>
