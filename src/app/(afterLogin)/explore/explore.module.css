@@ -1,0 +1,40 @@
+.exploreMenu {
+  width: 100%;
+  height: 100%;
+}
+
+.topSection {
+  width: 100%;
+  height: 53px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.settingBox {
+  min-width: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.settingLink {
+  min-width: 36px;
+  min-height: 36px;
+  border-radius: 99%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.2s;
+}
+
+.settingLink:hover {
+  cursor: pointer;
+  background-color: rgba(15, 20, 25, 0.1);
+}
+
+.svg {
+  width: 20px;
+  height: 20px;
+}
