@@ -141,6 +141,8 @@
 }
 
 .rightSection {
+  padding: 12px 0 64px 0;
+
   width: 350px;
   position: relative;
 }
