@@ -1,14 +1,9 @@
-.homeFixed {
-  width: inherit;
-}
-
-.homeTab {
+.tab {
   width: 100%;
   display: flex;
 }
 
-.homeForyou,
-.homeFollow {
+.tabBox {
   height: 53px;
   flex: 1;
   display: flex;
@@ -17,8 +12,7 @@
   width: max-content;
 }
 
-.homeForyou:hover,
-.homeFollow:hover {
+.tabBox:hover {
   cursor: pointer;
   background-color: rgba(15, 20, 25, 0.1);
   transition: 0.4s;

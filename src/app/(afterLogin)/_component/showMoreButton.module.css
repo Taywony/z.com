@@ -1,0 +1,22 @@
+.showMoreBtn {
+  width: 100%;
+}
+
+.showMoreLink {
+  width: 100%;
+  display: block;
+  padding: 16px;
+  transition: 0.2s;
+}
+
+.showMoreLink:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.showMoreLink span {
+  font-size: 15px;
+  color: #1d9bf0;
+  font-weight: normal;
+  line-height: 20px;
+}

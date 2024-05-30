@@ -1,0 +1,29 @@
+.backBtnBox {
+  min-width: 56px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.backBtn {
+  min-width: 36px;
+  min-height: 36px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  border-radius: 50%;
+}
+
+.backBtn:hover {
+  cursor: pointer;
+  background-color: rgba(15, 20, 25, 0.1);
+}
+
+.backBtnIcon {
+  width: 20px;
+  height: 20px;
+}

@@ -4,28 +4,23 @@ import Link from "next/link";
 import style from "./profile.module.css";
 import Image from "next/image";
 import Tay from "../../../../public/tay.png";
-import TabMenu from "../_component/TabMenu";
+import FollowRecommend from "../_component/FollowRecommend";
+import BackButton from "../_component/BackButton";
+import ShowMoreButton from "../_component/ShowMoreButton";
+import ProTab from "./_component/ProTab";
 
 const Profile = () => {
-  const HandleBackButton = () => {};
-  const HandleTab = () => {};
+  const user = {
+    id: "tay",
+    name: "김태원",
+    following: 13,
+    followers: 20,
+  };
 
   return (
     <main className={style.main}>
       <div className={style.header}>
-        <div className={style.backBtnBox}>
-          <button className={style.backBtn} onClick={HandleBackButton}>
-            <svg
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              className={style.backBtnIcon}
-            >
-              <g>
-                <path d="M7.414 13l5.043 5.04-1.414 1.42L3.586 12l7.457-7.46 1.414 1.42L7.414 11H21v2H7.414z"></path>
-              </g>
-            </svg>
-          </button>
-        </div>
+        <BackButton />
         <div className={style.hearderUser}>
           <h3 className={style.headerTitle}>김태원</h3>
           <p className={style.headerPost}>0 posts</p>
@@ -97,14 +92,16 @@ const Profile = () => {
           </div>
         </div>
         <nav className={style.menuTabSection}>
-          <TabMenu title="Posts" isActive={true} handleTab={HandleTab} />
-          <TabMenu title="Replies" isActive={false} handleTab={HandleTab} />
-          <TabMenu title="Highlights" isActive={true} handleTab={HandleTab} />
-          <TabMenu title="Articles" isActive={true} handleTab={HandleTab} />
-          <TabMenu title="Media" isActive={true} handleTab={HandleTab} />
-          <TabMenu title="Likes" isActive={true} handleTab={HandleTab} />
+          <ProTab />
         </nav>
-        <section className={style.tabQuerySection}>탭 내용</section>
+        <section className={style.tabQuerySection}>
+          <h3>Who to follow</h3>
+          <FollowRecommend />
+          <FollowRecommend />
+          <FollowRecommend />
+          <FollowRecommend />
+          <ShowMoreButton url="/i/connect_people?user_id=" />
+        </section>
       </div>
     </main>
   );

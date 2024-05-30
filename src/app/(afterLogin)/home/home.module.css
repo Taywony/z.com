@@ -1,9 +1,15 @@
 .main {
   width: 100%;
   height: 100dvh;
+  position: relative;
 }
 
 .tabSection {
+  position: sticky;
+  top: -0.5px;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
   display: flex;
   width: 100%;
   border-bottom: 1px solid rgb(239, 243, 244);
