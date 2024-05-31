@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import Trend from "./Trend";
 import style from "./trendSection.module.css";
+import ShowMoreButton from "./ShowMoreButton";
 
 export default function TrendSection() {
   const pathname = usePathname();
@@ -12,7 +13,7 @@ export default function TrendSection() {
   return (
     <div className={style.trendBg}>
       <div className={style.trend}>
-        <h3>Trends for you</h3>
+        <h3 className={style.trendTitle}>Trends for you</h3>
         <Trend />
         <Trend />
         <Trend />
@@ -20,6 +21,7 @@ export default function TrendSection() {
         <Trend />
         <Trend />
         <Trend />
+        <ShowMoreButton url="/i/trends" />
       </div>
     </div>
   );

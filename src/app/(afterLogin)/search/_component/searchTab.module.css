@@ -1,0 +1,58 @@
+.tab {
+  width: 100%;
+  display: flex;
+}
+
+.tabBox {
+  height: 53px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+}
+
+.tabBox:hover {
+  cursor: pointer;
+  background-color: rgba(15, 20, 25, 0.1);
+  transition: 0.4s;
+}
+
+.titleActive {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.titleActive .tabText {
+  font-weight: 700;
+}
+
+.titleNonActive {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(113, 118, 123);
+  font-size: 15px;
+}
+
+.titleNonActive .tabText {
+  font-weight: 500;
+}
+
+.tabIndicator {
+  position: absolute;
+  bottom: 0px;
+  min-width: 56px;
+  width: 100%;
+  border: 2px solid rgb(28, 155, 240);
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}

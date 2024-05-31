@@ -1,0 +1,21 @@
+.followSection {
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid rgb(239, 243, 244);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.followSectionFixed {
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid rgb(239, 243, 244);
+  border-radius: 16px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+}
+
+.followSectionTitle {
+  padding: 12px 16px;
+}

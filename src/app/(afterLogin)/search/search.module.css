@@ -1,0 +1,55 @@
+.searchMain {
+  width: 100%;
+  height: 100%;
+}
+
+.topFixed {
+  position: sticky;
+  top: -0.5px;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+}
+
+.topSection {
+  width: 100%;
+  height: 53px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.settingBox {
+  min-width: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.settingButton {
+  min-width: 36px;
+  min-height: 36px;
+  border-radius: 99%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  border: none;
+  background-color: #fff;
+}
+
+.settingButton:hover {
+  cursor: pointer;
+  background-color: rgba(15, 20, 25, 0.1);
+}
+
+.svg {
+  width: 20px;
+  height: 20px;
+}
+
+.menuTabSection {
+  display: flex;
+  border-bottom: 1px solid rgb(239, 243, 244);
+}

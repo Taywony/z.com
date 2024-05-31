@@ -2,7 +2,11 @@ import Image from "next/image";
 import style from "./searchForm.module.css";
 import Explore from "../../../../public/explore.svg";
 
-export default function SearchForm() {
+type Props = {
+  q?: string;
+};
+
+const SearchForm = ({ q }: Props) => {
   return (
     <form className={style.search}>
       <div className={style.serachBox}>
@@ -17,4 +21,6 @@ export default function SearchForm() {
       </div>
     </form>
   );
-}
+};
+
+export default SearchForm;

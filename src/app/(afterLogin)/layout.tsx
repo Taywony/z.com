@@ -6,10 +6,10 @@ import Link from "next/link";
 
 import NavMenu from "./_component/NavMenu";
 import LogoutButton from "./_component/LogoutButton";
-import FollowRecommend from "./_component/FollowRecommend";
 import TrendSection from "./_component/TrendSection";
 import SearchSection from "./_component/SearchSection";
 import SearchFileter from "./_component/SearchFilter";
+import FollowSection from "./_component/FollowSection";
 
 type Props = {
   children: ReactNode;
@@ -49,13 +49,7 @@ export default function AfterLoginLayout({ children, modal }: Props) {
             <SearchSection />
             <div className={style.trendFollow}>
               <TrendSection />
-              <div className={style.followSection}>
-                <h3>Who to follow</h3>
-                <FollowRecommend />
-                <FollowRecommend />
-                <FollowRecommend />
-                <FollowRecommend />
-              </div>
+              <FollowSection />
             </div>
           </section>
         </div>
