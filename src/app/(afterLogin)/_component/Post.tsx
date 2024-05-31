@@ -4,7 +4,7 @@ import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import "dayjs/locale/ko";
 import ActionButtons from "./ActionButtons";
-import PostArticle from "../../_component/PostArticle";
+import PostArticle from "./PostArticle";
 
 dayjs.locale("ko");
 dayjs.extend(relativeTime);

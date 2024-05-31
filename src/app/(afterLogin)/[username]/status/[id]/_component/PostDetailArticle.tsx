@@ -2,10 +2,10 @@
 
 import style from "./postDetailArticle.module.css";
 import Link from "next/link";
-import ActionButtons from "@/app/(afterLogin)/home/_component/ActionButtons";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import "dayjs/locale/ko";
+import ActionButtons from "@/app/(afterLogin)/_component/ActionButtons";
 
 dayjs.locale("ko");
 dayjs.extend(relativeTime);

@@ -213,5 +213,5 @@
 .actionButtonBox {
   border-top: 1px solid rgb(239, 243, 244);
   border-bottom: 1px solid rgb(239, 243, 244);
-  padding-bottom: 12px;
+  padding: 4px 0;
 }

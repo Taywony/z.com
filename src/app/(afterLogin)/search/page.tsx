@@ -3,7 +3,7 @@ import BackButton from "../_component/BackButton";
 import SearchForm from "../_component/SearchForm";
 import style from "./search.module.css";
 import SearchTab from "./_component/SearchTab";
-import Post from "../home/_component/Post";
+import Post from "../_component/Post";
 
 type Props = {
   searchParams: { q: string; f?: string; pf?: string; lf?: string };
