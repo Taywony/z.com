@@ -20,7 +20,7 @@ const PostDetailArticle = () => {
     postId: 123456789,
     content: "토트넘을 탈출하고 싶어요 레알마드리드가서 주전 먹을게요!",
     createdAt: new Date(),
-    Images: [],
+    Images: [{ imageId: 1, Link: "https://picsum.photos/200" }],
   };
 
   return (

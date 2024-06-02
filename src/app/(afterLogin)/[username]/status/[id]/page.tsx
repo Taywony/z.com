@@ -24,15 +24,9 @@ const PostDetail = () => {
             </div>
           </div>
         </div>
-        <div className={style.replyContentsBox}>
-          <Post />
-        </div>
-        <div className={style.replyContentsBox}>
-          <Post />
-        </div>
-        <div className={style.replyContentsBox}>
-          <Post />
-        </div>
+        <Post />
+        <Post />
+        <Post />
       </section>
     </div>
   );
