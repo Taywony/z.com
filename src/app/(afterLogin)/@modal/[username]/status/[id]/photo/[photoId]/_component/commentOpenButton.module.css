@@ -1,0 +1,32 @@
+.commentOpenBtnBox {
+  min-width: 36px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.commentOpenBtn {
+  min-width: 36px;
+  min-height: 36px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.74);
+  backdrop-filter: blur(4px);
+}
+
+.commentOpenBtn:hover {
+  cursor: pointer;
+  background-color: rgba(26, 26, 26, 0.75);
+}
+
+.commentOpenBtnIcon {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}

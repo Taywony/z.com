@@ -10,7 +10,11 @@ import ActionButtons from "@/app/(afterLogin)/_component/ActionButtons";
 dayjs.locale("ko");
 dayjs.extend(relativeTime);
 
-const PostDetailArticle = () => {
+type Props = {
+  inModal?: boolean;
+};
+
+const PostDetailArticle = ({ inModal }: Props) => {
   const target = {
     User: {
       id: "sonny",
@@ -48,10 +52,13 @@ const PostDetailArticle = () => {
             </div>
           </div>
           {/* 구독,세팅 */}
+
           <div className={style.subscribeSettingBox}>
-            <div className={style.subscribeBox}>
-              <button className={style.subscribeButton}>Subscribe</button>
-            </div>
+            {!inModal && (
+              <div className={style.subscribeBox}>
+                <button className={style.subscribeButton}>Subscribe</button>
+              </div>
+            )}
             <div className={style.settingBox}>
               <button className={style.settingButton}>
                 <svg

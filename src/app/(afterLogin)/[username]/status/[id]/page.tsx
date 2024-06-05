@@ -1,7 +1,7 @@
 import BackButton from "@/app/(afterLogin)/_component/BackButton";
 import style from "./postDetail.module.css";
-import ReplyForm from "./_component/ReplyForm";
-import PostDetailArticle from "./_component/PostDetailArticle";
+import ReplyForm from "../../../_component/ReplyForm";
+import PostDetailArticle from "../../../_component/PostDetailArticle";
 import Post from "@/app/(afterLogin)/_component/Post";
 
 const PostDetail = () => {
