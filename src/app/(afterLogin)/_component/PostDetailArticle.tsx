@@ -52,7 +52,6 @@ const PostDetailArticle = ({ inModal }: Props) => {
             </div>
           </div>
           {/* 구독,세팅 */}
-
           <div className={style.subscribeSettingBox}>
             {!inModal && (
               <div className={style.subscribeBox}>

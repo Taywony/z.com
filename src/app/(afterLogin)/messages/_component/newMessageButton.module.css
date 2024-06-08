@@ -1,0 +1,28 @@
+.newMessageBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.newMessageButton {
+  min-width: 36px;
+  min-height: 36px;
+  border-radius: 99%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.newMessageButton:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+}
+
+.svg {
+  width: 20px;
+  height: 20px;
+}

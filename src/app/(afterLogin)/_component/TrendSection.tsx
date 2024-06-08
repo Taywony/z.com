@@ -8,7 +8,8 @@ import ShowMoreButton from "./ShowMoreButton";
 export default function TrendSection() {
   const pathname = usePathname();
 
-  if (pathname === "/explore") return null;
+  // if (pathname === "/explore") return null;
+  if (pathname === "/explore" || pathname === "/messages") return null;
 
   return (
     <div className={style.trendBg}>
