@@ -1,14 +1,44 @@
 import NewMessageButton from "./_component/NewMessageButton";
+import SendUserRoom from "./_component/SendUserRoom";
 import SettingButton from "./_component/SettingButton";
 import style from "./message.module.css";
 
-// function MessagesUser () {
-//   return (
-
-//   )
-// }
-
 const Message = () => {
+  const SendUser = [
+    {
+      messageId: "12345",
+      img: "https://picsum.photos/49/50",
+      name: "Foden",
+      id: "Foden47",
+      createAt: new Date(),
+      message: "이번시즌 우승했어요!",
+    },
+    {
+      messageId: "112",
+      img: "https://picsum.photos/50/50",
+      name: "KDB",
+      id: "deokbae",
+      createAt: new Date(),
+      message: "어시 많이 할게요",
+    },
+    {
+      messageId: "346",
+      img: "https://picsum.photos/51/50",
+      name: "Rody",
+      id: "Rodrigo",
+      createAt: new Date(),
+      message: "내가 나오면 무패",
+    },
+    {
+      messageId: "0098",
+      img: "https://picsum.photos/52/50",
+      name: "Haaland",
+      id: "Haaland9",
+      createAt: new Date(),
+      message: "골든 부츠를 받았어요!",
+    },
+  ];
+
   return (
     <div className={style.container}>
       <div className={style.viewBox}>
@@ -31,43 +61,32 @@ const Message = () => {
             </div>
             {/* 유저 네비게이터부분 */}
             <div className={style.naviMain}>
-              <div className={style.userMainBox}>
-                <div className={style.userImageBox}>
-                  <img
-                    src="https://picsum.photos/50/50"
-                    className={style.userImage}
-                  />
-                </div>
-                <div className={style.user}>
-                  <div className={style.user}></div>
-                </div>
-              </div>
-              <div className={style.userMainBox}>
-                <div className={style.userImageBox}>
-                  <img
-                    src="https://picsum.photos/50/50"
-                    className={style.userImage}
-                  />
-                </div>
-                <div className={style.userInfoBox}>
-                  <div className={style.messageInfoZone}>
-                    <div className={style.messageInfo}>
-                      <div className={style.userInfo}>
-                        <div className={style.userName}>김태원</div>
-                        <div className={style.userEmail}>@taewon2659</div>
-                      </div>
-                      <div className={style.middleDot}> · </div>
-                      <div className={style.sendDate}>Jun 9</div>
-                    </div>
-                    <div className={style.messagePreview}>
-                      <span className={style.messagePrivewText}>
-                        미리보기 미리보기
-                      </span>
-                    </div>
-                  </div>
-                  <div className={style.messageSettingButton}></div>
-                </div>
-              </div>
+              <SendUserRoom />
+              {/* // <div className={style.userMainBox} key={index}>
+                  //   <div className={style.userImageBox}>
+                  //     <img src={img} className={style.userImage} />
+                  //   </div>
+                  //   <div className={style.userInfoBox}>
+                  //     <div className={style.messageInfoZone}>
+                  //       <div className={style.messageInfo}>
+                  //         <div className={style.userInfo}>
+                  //           <div className={style.userName}>{name}</div>
+                  //           <div className={style.userEmail}>@{id}</div>
+                  //         </div>
+                  //         <div className={style.middleDot}> · </div>
+                  //         <div className={style.sendDate}>
+                  //           {createAt.toDateString()}
+                  //         </div>
+                  //       </div>
+                  //       <div className={style.messagePreview}>
+                  //         <span className={style.messagePrivewText}>
+                  //           {message}
+                  //         </span>
+                  //       </div>
+                  //     </div>
+                  //     <div className={style.messageSettingButton}></div>
+                  //   </div>
+                  // </div> */}
             </div>
           </div>
         </section>

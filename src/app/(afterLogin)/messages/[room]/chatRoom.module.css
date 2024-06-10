@@ -1,0 +1,147 @@
+.main {
+  width: 100%;
+  height: 100%;
+  /* overflow: auto; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 600px;
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+}
+
+.headerTitleBox {
+  flex-grow: 1;
+}
+
+.headerTitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 17px;
+}
+
+.headerIconBox {
+  min-width: 56px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.headerIconLink {
+  min-width: 36px;
+  min-height: 36px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerIconLink:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+}
+
+.headerIconSvg {
+  width: 20px;
+  height: 20px;
+}
+
+.articleContainer {
+  flex-grow: 1;
+}
+
+.messagesBox {
+  flex-grow: 1;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.userInfoZone {
+  border-bottom: 1px solid rgb(239, 243, 244);
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.userImage {
+  width: 64px;
+  height: 64px;
+}
+
+.image {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
+
+.userId {
+  max-width: 100%;
+  margin-bottom: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameBox {
+  line-height: 20px;
+}
+
+.nameText {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.idBox {
+  line-height: 20px;
+}
+
+.idText {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(83, 100, 113);
+}
+
+.joinDate {
+  margin: 12px 0;
+}
+
+.joinDateText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgb(83, 100, 113);
+}
+
+.followIntersection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.followIntersectionText {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgb(83, 100, 113);
+  word-wrap: break-word;
+}
