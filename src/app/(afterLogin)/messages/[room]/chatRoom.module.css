@@ -1,7 +1,6 @@
 .main {
   width: 100%;
   height: 100%;
-  /* overflow: auto; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -78,6 +77,11 @@
   padding: 20px 16px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.userInfoZone:hover {
+  background-color: rgb(247, 249, 249);
 }
 
 .userImage {
@@ -102,6 +106,10 @@
 
 .nameBox {
   line-height: 20px;
+}
+
+.nameBox:hover {
+  text-decoration: underline;
 }
 
 .nameText {
@@ -144,4 +152,70 @@
   line-height: 16px;
   color: rgb(83, 100, 113);
   word-wrap: break-word;
+}
+
+.myMessage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.myMessage .content {
+  border-radius: 24px;
+  border-bottom-right-radius: 4px;
+  background-color: rgb(29, 155, 240);
+  padding: 12px 16px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+.myMessage .content:hover {
+  background-color: rgb(26, 140, 216);
+}
+
+.myMessage .date {
+  display: flex;
+  justify-content: flex-end;
+  color: rgb(83, 100, 113);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 6px;
+}
+
+.yourMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.yourMessage .content {
+  border-radius: 24px;
+  border-bottom-left-radius: 4px;
+  background-color: #eff3f4;
+  padding: 12px 16px;
+  color: #536471;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+.yourMessage .content:hover {
+  background-color: #d7dadb;
+}
+
+.yourMessage .date {
+  display: flex;
+  justify-content: flex-start;
+  color: rgb(83, 100, 113);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 6px;
 }
