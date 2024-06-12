@@ -70,10 +70,8 @@
   flex-direction: row;
 }
 
-.postImageSection img {
-  margin-top: 12px;
-  width: 100%;
-  border-radius: 16px;
+.postImageSection {
+  margin-top: 8px;
 }
 
 .actionButtons {

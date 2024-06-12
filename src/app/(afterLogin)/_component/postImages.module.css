@@ -1,0 +1,143 @@
+.oneImageBox {
+  width: max-content;
+  height: max-content;
+  max-height: 514px;
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid rgb(207, 217, 222);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.oneImage {
+  flex: 1;
+  width: max-content;
+  height: max-content;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+/* 이미지 2개 */
+
+.twoImageBox {
+  width: 100%;
+  height: 290px;
+  display: flex;
+  gap: 2px;
+  border: 1px solid rgb(207, 217, 222);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.twoImage {
+  flex: 1;
+  width: max-content;
+  height: auto;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.twoImage img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 이미지 3개 */
+
+.threeImageBox {
+  width: 100%;
+  height: 292px;
+  display: flex;
+  gap: 2px;
+  border: 1px solid rgb(207, 217, 222);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.threeLeft {
+  flex: 1;
+  width: 100%;
+  height: 290px;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.threeLeft img {
+  width: inherit;
+  height: inherit;
+}
+
+.threeRightBox {
+  flex: 1;
+  width: 100%;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.threeRightTop {
+  width: 100%;
+  height: 144px;
+  flex: 1;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.threeRightBottom {
+  width: 100%;
+  height: 144px;
+  flex: 1;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.threeRightTop img {
+  width: inherit;
+  height: inherit;
+}
+.threeRightBottom img {
+  width: inherit;
+  height: inherit;
+}
+
+/* 이미지 4개 */
+
+.fourImageBox {
+  width: 100%;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+  border: 1px solid rgb(207, 217, 222);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.fourTopBox {
+  width: 100%;
+  height: 144px;
+  display: flex;
+  gap: 2px;
+}
+
+.fourBottomBox {
+  width: 100%;
+  height: 144px;
+  display: flex;
+  gap: 2px;
+}
+
+.fourImage {
+  flex: 1;
+  width: max-content;
+  height: auto;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.fourImage img {
+  width: 100%;
+  height: 100%;
+}
