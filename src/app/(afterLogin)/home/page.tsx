@@ -24,10 +24,10 @@ export default function Home() {
         <PostForm />
         <Post />
         <Post />
+        {/* <Post />
         <Post />
         <Post />
-        <Post />
-        <Post />
+        <Post /> */}
       </TabProvider>
     </main>
   );

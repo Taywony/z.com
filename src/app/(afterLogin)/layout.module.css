@@ -21,8 +21,12 @@
 
 @media all and (min-width: 1280px) {
   .leftSection {
-    width: 275px;
+    width: 259px;
     height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 8px;
   }
 }
 
@@ -44,6 +48,7 @@
 @media all and (min-width: 1280px) {
   .logoBox {
     padding: 2px 0;
+    justify-content: flex-start;
   }
 }
 
@@ -85,49 +90,29 @@
   }
 }
 
-.menuBox li {
-  list-style-type: none;
-}
-
-.menuLink {
+.navBox {
   width: 100%;
-  height: 58.25px;
-  padding: 4px 0;
-}
-
-.menuLinkBox {
-  max-width: 100%;
-  padding: 12px;
   display: flex;
-  justify-content: start;
+  flex-direction: column;
   align-items: center;
-  transition-duration: 0.2s;
-  border-top-left-radius: 9999px;
-  border-top-right-radius: 9999px;
-  border-bottom-left-radius: 9999px;
-  border-bottom-right-radius: 9999px;
 }
 
-.menuLink:hover .menuLinkBox {
-  background-color: rgba(239, 243, 244, 0.8);
+@media all and (min-width: 1280px) {
+  .navBox {
+    width: 100%;
+    align-items: flex-start;
+  }
 }
 
-.menuIcon {
-  width: 26.25px;
-  height: 26.25px;
-}
-
-.menuTitle {
-  max-width: 100%;
-  font-size: 20px;
-  margin: 0 20px;
-  font-weight: bold;
+.navUl {
+  width: 100%;
 }
 
 .postBtn {
   margin: 16px 0;
   width: 50px;
   height: 50px;
+  transition: 0.2s;
   display: flex;
   justify-content: center;
   align-items: center;

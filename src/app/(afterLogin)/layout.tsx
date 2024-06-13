@@ -28,8 +28,8 @@ export default function AfterLoginLayout({ children, modal }: Props) {
               </Link>
             </div>
             <div className={style.menuBox}>
-              <nav>
-                <ul>
+              <nav className={style.navBox}>
+                <ul className={style.navUl}>
                   <NavMenu />
                 </ul>
                 <Link href="/compose/tweet" className={style.postBtn}>

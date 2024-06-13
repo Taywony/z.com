@@ -12,9 +12,9 @@ export default function NavMenu() {
   };
 
   return (
-    <>
-      <li>
-        <Link href="/home">
+    <div className={style.container}>
+      <li className={style.navMenuList}>
+        <Link href="/home" className={style.navMenuLink}>
           <div className={style.navPill}>
             {segment === "home" ? (
               <>
@@ -48,8 +48,8 @@ export default function NavMenu() {
           </div>
         </Link>
       </li>
-      <li>
-        <Link href="/explore">
+      <li className={style.navMenuList}>
+        <Link href="/explore" className={style.navMenuLink}>
           <div className={style.navPill}>
             {segment && ["search", "explore"].includes(segment) ? (
               <>
@@ -83,8 +83,8 @@ export default function NavMenu() {
           </div>
         </Link>
       </li>
-      <li>
-        <Link href="/messages">
+      <li className={style.navMenuList}>
+        <Link href="/messages" className={style.navMenuLink}>
           <div className={style.navPill}>
             {segment === "messages" ? (
               <>
@@ -119,8 +119,8 @@ export default function NavMenu() {
         </Link>
       </li>
       {me?.id && (
-        <li>
-          <Link href={`/${me?.id}`}>
+        <li className={style.navMenuList}>
+          <Link href={`/${me?.id}`} className={style.navMenuLink}>
             <div className={style.navPill}>
               {segment === me.id ? (
                 <>
@@ -155,6 +155,6 @@ export default function NavMenu() {
           </Link>
         </li>
       )}
-    </>
+    </div>
   );
 }
