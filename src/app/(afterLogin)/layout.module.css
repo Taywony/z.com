@@ -1,6 +1,7 @@
 .container {
   display: flex;
   width: 100dvw;
+  height: 100%;
 }
 
 .leftSectionWrapper {
@@ -176,7 +177,7 @@
   flex-direction: column;
   align-items: flex-start;
   flex-grow: 1;
-  height: 100dvh;
+  height: 100%;
 }
 
 .rightSectionInner {
@@ -187,9 +188,10 @@
 }
 
 .main {
-  height: 150dvh;
+  height: 100%;
   width: 600px;
   display: flex;
+
   justify-content: center;
   border-left: 1px solid rgb(239, 243, 244);
   border-right: 1px solid rgb(239, 243, 244);

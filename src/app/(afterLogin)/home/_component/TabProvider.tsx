@@ -1,5 +1,5 @@
 "use client";
-
+import style from "./tab.module.css";
 import { ReactNode, createContext, useState } from "react";
 
 export const TabContext = createContext({
