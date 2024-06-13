@@ -22,9 +22,9 @@ const Post = () => {
     createdAt: new Date(),
     Images: [
       { imageId: 1, Link: "https://picsum.photos/200/510" },
-      // { imageId: 2, Link: "https://picsum.photos/250/250" },
-      // { imageId: 3, Link: "https://picsum.photos/200/200" },
-      // { imageId: 4, Link: "https://picsum.photos/220/220" },
+      { imageId: 2, Link: "https://picsum.photos/250/250" },
+      { imageId: 3, Link: "https://picsum.photos/200/200" },
+      { imageId: 4, Link: "https://picsum.photos/220/220" },
     ],
   };
 
