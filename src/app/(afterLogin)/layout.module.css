@@ -12,26 +12,25 @@
 }
 
 .leftSection {
-  width: 88px;
+  width: 259px;
   height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 8px;
 }
 
-@media all and (min-width: 1280px) {
+@media screen and (max-width: 1293px) {
   .leftSection {
-    width: 259px;
+    width: 88px;
     height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 8px;
   }
 }
 
 .leftSectionFixed {
+  padding: 0 8px;
   position: fixed;
   width: inherit;
   height: 100dvh;
@@ -42,14 +41,14 @@
 
 .logoBox {
   padding: 2px 0;
-  display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
-@media all and (min-width: 1280px) {
+@media screen and (max-width: 1293px) {
   .logoBox {
     padding: 2px 0;
-    justify-content: flex-start;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -77,31 +76,31 @@
   margin: 2px 0 4px 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   flex: 1;
 }
 
-@media all and (min-width: 1280px) {
+@media screen and (max-width: 1293px) {
   .menuBox {
     width: 100%;
     margin: 2px 0 4px 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex: 1;
   }
 }
 
 .navBox {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
-@media all and (min-width: 1280px) {
+@media screen and (max-width: 1293px) {
   .navBox {
     width: 100%;
-    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -111,9 +110,8 @@
 
 .postBtn {
   margin: 16px 0;
-  width: 50px;
-  height: 50px;
-  transition: 0.2s;
+  width: 233px;
+  height: 52px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,22 +127,19 @@
 }
 
 .postBtn span {
-  display: none;
+  display: inline-block;
 }
 
 .postBtn svg {
-  display: inline-block;
-  fill: white;
-  width: 24px;
-  height: 24px;
-  margin: 16px 0;
+  display: none;
 }
 
-@media all and (min-width: 1280px) {
+@media screen and (max-width: 1293px) {
   .postBtn {
     margin: 16px 0;
-    width: 233px;
-    height: 52px;
+    width: 50px;
+    height: 50px;
+    transition: 0.2s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,11 +155,15 @@
   }
 
   .postBtn span {
-    display: inline-block;
+    display: none;
   }
 
   .postBtn svg {
-    display: none;
+    display: inline-block;
+    fill: white;
+    width: 24px;
+    height: 24px;
+    margin: 16px 0;
   }
 }
 
@@ -177,7 +176,7 @@
   flex-direction: column;
   align-items: flex-start;
   flex-grow: 1;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .rightSectionInner {
@@ -185,6 +184,24 @@
   justify-content: space-between;
   width: 990px;
   height: 100%;
+}
+
+@media screen and (max-width: 1107px) {
+  .rightSectionInner {
+    display: flex;
+    justify-content: space-between;
+    width: 920px;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .rightSectionInner {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 100%;
+  }
 }
 
 .main {
@@ -201,6 +218,23 @@
   padding: 12px 0 64px 0;
   width: 350px;
   position: relative;
+}
+
+@media screen and (max-width: 1107px) {
+  .rightSection {
+    padding: 12px 0 64px 0;
+    width: 290px;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .rightSection {
+    padding: 12px 0 64px 0;
+    width: 350px;
+    position: relative;
+    display: none;
+  }
 }
 
 .trendFollow {

@@ -8,6 +8,8 @@ import style from "./followSection.module.css";
 const FollowSection = () => {
   const pathname = usePathname();
 
+  if (pathname === "/messages") return null;
+
   return (
     // <div
     //   className={

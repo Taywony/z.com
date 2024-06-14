@@ -4,7 +4,8 @@
 }
 
 .topFixed {
-  position: sticky;
+  width: 598px;
+  position: fixed;
   top: -0.5px;
   z-index: 3;
   background-color: rgba(255, 255, 255, 0.65);
@@ -60,8 +61,7 @@
 .trendSection {
   width: 100%;
   font-weight: bold;
-  /* border-top: 1px solid rgb(239, 243, 244);
-  margin-top: 12px; */
+  margin-top: 108px;
 }
 
 .trendSection h3 {

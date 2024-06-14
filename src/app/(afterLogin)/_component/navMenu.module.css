@@ -15,7 +15,7 @@
   align-items: center;
 }
 
-@media all and (min-width: 1280px) {
+@media all and (min-width: 1294px) {
   .navMenuLink {
     width: 100%;
     display: flex;
@@ -44,7 +44,7 @@
   display: none;
 }
 
-@media all and (min-width: 1280px) {
+@media all and (min-width: 1294px) {
   .navPill > div {
     margin-left: 20px;
     margin-right: 16px;

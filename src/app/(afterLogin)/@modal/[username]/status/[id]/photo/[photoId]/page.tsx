@@ -2,8 +2,6 @@ import ActionButtons from "@/app/(afterLogin)/_component/ActionButtons";
 import CommentOpenButton from "./_component/CommentOpenButton";
 import PhotoModalCloseButton from "./_component/PhotoModalCloseButton";
 import style from "./photoModal.module.css";
-import Post from "@/app/(afterLogin)/_component/Post";
-import PostForm from "@/app/(afterLogin)/home/_component/PostForm";
 import PhotoModalPostDetail from "./_component/PhotoModalPostDetail";
 
 const PhotoModal = () => {

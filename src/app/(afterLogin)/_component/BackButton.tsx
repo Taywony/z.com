@@ -1,9 +1,14 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import style from "./backButton.module.css";
 
 const BackButton = () => {
-  const HandleBackButton = () => {};
+  const router = useRouter();
+
+  const HandleBackButton = () => {
+    router.back();
+  };
 
   return (
     <div className={style.backBtnBox}>

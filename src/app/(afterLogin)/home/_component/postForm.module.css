@@ -1,6 +1,6 @@
-/* .postFormWrapper {
-  margin-top: 100px;
-} */
+.postFormWrapper {
+  margin-top: 54px;
+}
 
 .postFormBox {
   padding: 8px 16px;
@@ -12,6 +12,7 @@
 .imageSection {
   width: 40px;
   height: 40px;
+  padding-top: 12px;
 }
 
 .meImage {

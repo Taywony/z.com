@@ -1,19 +1,19 @@
 .userTabSection {
   margin: 12px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-@media all and (min-width: 1280px) {
+@media screen and (max-width: 1293px) {
   .userTabSection {
     margin: 12px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .userBtn {
-  width: 64px;
-  height: 64px;
+  width: 100%;
+  height: 65px;
   background-color: inherit;
   border: none;
   padding: 12px;
@@ -26,10 +26,10 @@
   border-bottom-right-radius: 9999px;
 }
 
-@media all and (min-width: 1280px) {
+@media screen and (max-width: 1293px) {
   .userBtn {
-    width: 100%;
-    height: 65px;
+    width: 64px;
+    height: 64px;
     background-color: inherit;
     border: none;
     padding: 12px;
@@ -55,6 +55,8 @@
 .userImgBox {
   width: 40px;
   height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
 }
 
 .userImg {
@@ -67,14 +69,14 @@
   display: flex;
   flex-direction: column;
   padding: 0 12px;
-  display: none;
 }
 
-@media all and (min-width: 1280px) {
+@media screen and (max-width: 1293px) {
   .userInfoBox {
     display: flex;
     flex-direction: column;
     padding: 0 12px;
+    display: none;
   }
 }
 
@@ -106,14 +108,14 @@
   display: flex;
   flex-grow: 1;
   justify-content: flex-end;
-  display: none;
 }
 
-@media all and (min-width: 1280px) {
+@media screen and (max-width: 1293px) {
   .userMoreBox {
     display: flex;
     flex-grow: 1;
     justify-content: flex-end;
+    display: none;
   }
 }
 

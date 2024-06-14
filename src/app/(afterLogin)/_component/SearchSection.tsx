@@ -7,7 +7,12 @@ import SearchForm from "./SearchForm";
 export default function SearchSection() {
   const pathname = usePathname();
 
-  if (pathname === "/explore" || "/search") return null;
+  if (
+    pathname === "/explore" ||
+    pathname === "/search" ||
+    pathname === "/messages"
+  )
+    return null;
   return (
     <>
       <div className={style.searchSection}>

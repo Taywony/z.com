@@ -22,7 +22,6 @@ export default function LogoutButton() {
         <div className={style.userImgBox}>
           <Image src={me.image} alt={me.id} className={style.userImg} />
         </div>
-
         <div className={style.userInfoBox}>
           <div className={style.userNameBox}>
             <p className={style.userName}>{me.nickname}</p>
